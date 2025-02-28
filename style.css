@@ -1,0 +1,236 @@
+@charset "UTF=8";
+
+
+/* スマホサイズのメディアクエリ */
+@media screen and (max-width: 768px) {
+    #element {
+        animation: slideFade 1s ease-out forwards;
+    }
+}
+
+
+
+
+
+.petit-formal-script-regular {
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}   
+
+.yuji-boku-regular {
+    font-family: "Yuji Boku", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.lora-uniquifier{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-image: url(dbd5fcd1db130aca365314a78dfbb59b_374664c88a1e05615b42aae163669812.webp);
+    background-size: 20%;
+    
+}
+
+#header{
+    background-color: black;
+
+    font-weight: bold;
+
+    font-family: "Yuji Boku";
+
+}
+
+#senzo{
+    font-size: 30px;
+    background: url(マグマ.jpg)no-repeat center;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+#mokuji{
+    background: linear-gradient(to top,rgb(155, 5, 5),rgb(0, 0, 0),rgb(38, 0, 255));
+    color: rgb(195, 219, 37);
+
+    font-family: "Yuji Boku";
+
+    width: 150px;
+    height: 180px;
+
+    padding: 7px;
+    margin-left: 10px;
+
+    border: 2px solid rgb(0, 255, 0);
+    border-radius: 60px/30px;
+}
+
+#mokuji a{
+    color: chartreuse;
+
+    font-family: "Lora", serif;
+
+    text-decoration: none;
+
+    
+}
+
+#mokuji a:hover{
+    color: rgb(255, 0, 238);
+}
+
+
+
+
+#body{
+
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+
+    background-image: url("istockphoto-905540432-612x612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.a1{
+    font-size: 30px;
+    font-weight: bold;
+
+    font-family: "Lora", serif;
+    
+
+    color: black;
+
+    
+}
+
+
+
+.p1{
+    font-family: "Petit Formal Script", cursive;
+    font-weight: bold;
+}
+
+
+.p1 a{
+    color: rgb(255, 0, 195);
+
+    text-decoration: none;
+}
+
+.p1 a:hover{
+    color: rgb(47, 0, 255);
+}
+
+
+
+
+
+
+
+
+@keyframes scrollEffect {
+    from { transform: scale(0.1); }
+    to { transform: scale(1.5); }
+}
+
+#kusa{
+    background-image: url(荒野.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+    animation: scrollEffect linear;
+    animation-timeline: scroll();
+
+    width: 60%;
+    margin: auto;
+
+    
+}
+
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#white{
+    width: 50%;
+    height: 600px;
+
+    background-image: url(wXKRP7S2KHMmhUbSeuRIPnKI5gn-removebg-preview.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+    animation: bounce 0.2s infinite alternate;
+
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateX(400px) scale(0.5);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(200px) scale(2);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(400px) scale(1);
+    }
+}
+
+#fire {
+    font-size: 200px;
+    background: url(マグマ.jpg) no-repeat center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+
+    /* 修正: スクロールアニメーションを明示的に指定 */
+    animation: slideFade 2s ease-out forwards;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 100%;
+}
