@@ -2,7 +2,7 @@
 
 
 /* スマホサイズのメディアクエリ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
     #element {
         animation: slideFade 1s ease-out forwards;
     }
@@ -209,7 +209,7 @@ body{
 @keyframes slideFade {
     0% {
         opacity: 0;
-        transform: translateX(400px) scale(0.5);
+        transform: translateX(0px) scale(0.5);
     }
     90% {
         opacity: 1;
@@ -217,7 +217,7 @@ body{
     }
     100% {
         opacity: 0;
-        transform: translateX(400px) scale(1);
+        transform: translateX(360px) scale(1);
     }
 }
 
